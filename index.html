@@ -1,43 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ФГБУ СЭУ ФПС</title>
-    <link rel="stylesheet" href="./css/style.min.css" />
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ФГБУ СЭУ ФПС</title>
+  <link rel="stylesheet" href="./scss/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lato:wght@400;900&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__fix">
       <div class="container">
-        <div class="header__wrapper">
-          <a href="" class="header__logo">
-            <img src="./img/logo.png" alt="header__logo" />
-          </a>
-          <div>
-            <div class="header__top-item">
-              <a href="#" class="header__top-link">МЧС России</a>
-              <a href="#" class="header__top-link">ГУ МЧС России</a>
-              <a href="#" class="header__top-link">ИЦЭП МЧС России</a>
-              <a href="#" class="header__top-link">Версия для слабовидящих</a>
-              <a
-                href="tel:+73833359939"
-                class="header__top-link--phone"
-                >+7(383)-335-99-39</a
-              >
-            </div>
-            <div class="header__bottom-item">
+        <div class="header__row">
+          <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="header__top-item">
+            <li> <a href="#" class="header__top-link">МЧС России</a></li>
+            <li> <a href="#" class="header__top-link">ГУ МЧС России</a></li>
+            <li> <a href="#" class="header__top-link">ИЦЭП МЧС России</a></li>
+            <li> <button href="#" class="header__top-link header__top-link--visually">Версия для слабовидящих</button>
+            </li>
+            <li> <a href="tel:+73833359939" class="header__top-link header__top-link--phone">+7(383)-335-99-39</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__fix-menu">
+      <div>
+        <img src="./img/logo.png" alt="header__logo" />
+        <ul class="header__fix-item">
+          <li><a href="#" class="header__fix-link">Об учреждении</a>
+            <!-- <ul class="read_more">
+              <li><a href="#" class="header__fix-link">Эксперты</a></li>
+              <li><a href="#" class="header__fix-link">Документы</a></li>
+            </ul> -->
+          </li>
+          <li><a href="#" class="header__fix-link">Эксперты</a></li>
+          <li><a href="#" class="header__fix-link">Документы</a></li>
+          <li><a href="#" class="header__fix-link">Услуги</a></li>
+          <li><a href="#" class="header__fix-link">Антикоррупция</a></li>
+          <li><a href="#" class="header__fix-link">Галерея</a></li>
+          <li><a href="#" class="header__fix-link">Контакты</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="header__logo">
+          <img src="./img/logo.png" alt="header__logo" />
+        </a>
+        <div>
+          <ul class="header__top-item">
+            <li> <a href="#" class="header__top-link">МЧС России</a></li>
+            <li> <a href="#" class="header__top-link">ГУ МЧС России</a></li>
+            <li> <a href="#" class="header__top-link">ИЦЭП МЧС России</a></li>
+            <li> <button href="#" class="header__top-link header__top-link--visually">Версия для слабовидящих</button>
+            </li>
+            <li> <a href="tel:+73833359939" class="header__top-link header__top-link--phone">+7(383)-335-99-39</a></li>
+          </ul>
+          <ul class="header__bottom-item">
+            <li>
               <a href="#" class="header__bottom-link">Об учреждении</a>
-              <a href="#" class="header__bottom-link">Эксперты</a>
-              <a href="#" class="header__bottom-link">Документы</a>
-              <a href="#" class="header__bottom-link">Услуги</a>
-              <a href="#" class="header__bottom-link">Антикоррупция</a>
-              <a href="#" class="header__bottom-link">Галерея</a>
-              <a href="#" class="header__bottom-link">Контакты</a>
-            </div>
+              <ul class="header__dropdown">
+                <li>
+                  <a href="" class="header__dropdown-item">Определение соответствия проектной документациив области
+                    ПБ</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Экспертные исследования</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытания веществ и материалов</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытание систем противопожарной защиты</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Сертификационные испытания</a>
+                </li>
+              </ul>
+            </li>
+            </li>
+            <li> <a href="#" class="header__bottom-link">Эксперты</a>
+              <ul class="header__dropdown">
+                <li>
+                  <a href="" class="header__dropdown-item">Определение соответствия проектной документациив области
+                    ПБ</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Экспертные исследования</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытания веществ и материалов</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытание систем противопожарной защиты</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Сертификационные испытания</a>
+                </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="header__bottom-link">Документы</a>
+              <ul class="header__dropdown">
+                <li>
+                  <a href="" class="header__dropdown-item">Определение соответствия проектной документациив области
+                    ПБ</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Экспертные исследования</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытания веществ и материалов</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытание систем противопожарной защиты</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Сертификационные испытания</a>
+                </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="header__bottom-link">Услуги</a>
+              <ul class="header__dropdown">
+                <li>
+                  <a href="" class="header__dropdown-item">Определение соответствия проектной документациив области
+                    ПБ</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Экспертные исследования</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытания веществ и материалов</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытание систем противопожарной защиты</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Сертификационные испытания</a>
+                </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="header__bottom-link">Антикоррупция</a>
+              <ul class="header__dropdown">
+                <li>
+                  <a href="" class="header__dropdown-item">Определение соответствия проектной документациив области
+                    ПБ</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Экспертные исследования</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытания веществ и материалов</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Испытание систем противопожарной защиты</a>
+                </li>
+                <li>
+                  <a href="" class="header__dropdown-item">Сертификационные испытания</a>
+                </li>
+              </ul>
+            </li>
+            <li> <a href="#" class="header__bottom-link">Галерея</a></li>
+            <li> <a href="#" class="header__bottom-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="about">
+    <div class="container">
+      <h1 class="about__title">ФГБУ СЭУ ФПС </h1>
+      <div class="about__description">ФГБУ СЭУ ФПС Испытательная пожарная лаборатория по Новосибирской области</div>
+      <div class="about__wrapper">
+        <div class="about__card">
+          <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M45.6 7.2H35.2V4C35.1973 1.7918 33.4082 0.00273438 31.2 0H16.8C14.5918 0.00273438 12.8027 1.7918 12.8 4V7.2H2.4C1.07461 7.2 0 8.27461 0 9.6V27.4078C0.00507812 28.4227 0.644531 29.3254 1.6 29.6664V40.8C1.6 42.1254 2.67461 43.2 4 43.2H44C45.3254 43.2 46.4 42.1254 46.4 40.8V29.6672C47.3555 29.3258 47.9953 28.4227 48 27.4078V9.6C48 8.27461 46.9254 7.2 45.6 7.2ZM14.4 4C14.4 2.67461 15.4746 1.6 16.8 1.6H31.2C32.5254 1.6 33.6 2.67461 33.6 4V7.2H32V4C32 3.5582 31.6418 3.2 31.2 3.2H16.8C16.3582 3.2 16 3.5582 16 4V7.2H14.4V4ZM30.4 7.2H17.6V4.8H30.4V7.2ZM44.8 40.8C44.8 41.2418 44.4418 41.6 44 41.6H4C3.5582 41.6 3.2 41.2418 3.2 40.8V29.9414L20.8 32.3688V34.4C20.8 35.7254 21.8746 36.8 23.2 36.8H24.8C26.1254 36.8 27.2 35.7254 27.2 34.4V32.3688L44.8 29.9414V40.8ZM25.6 34.4C25.6 34.8418 25.2418 35.2 24.8 35.2H23.2C22.7582 35.2 22.4 34.8418 22.4 34.4V29.6C22.4 29.1582 22.7582 28.8 23.2 28.8H24.8C25.2418 28.8 25.6 29.1582 25.6 29.6V34.4ZM46.4 27.4078C46.4004 27.8066 46.107 28.1449 45.7121 28.2008L45.4902 28.2313L27.2 30.7535V29.6C27.2 28.2746 26.1254 27.2 24.8 27.2H23.2C21.8746 27.2 20.8 28.2746 20.8 29.6V30.7535L2.28867 28.2008C1.89375 28.1453 1.59961 27.807 1.6 27.4078V9.6C1.6 9.1582 1.9582 8.8 2.4 8.8H45.6C46.0418 8.8 46.4 9.1582 46.4 9.6V27.4078Z"
+              fill="#E27410" />
+          </svg>
+          <p class="about__text">Работаем с 1957 года</p>
+        </div>
+        <div class="about__card about__card--center">
+          <svg width="48" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.1301 8.50815H3.13081C2.93666 8.50815 2.7793 8.66555 2.7793 8.85966C2.7793 9.05382 2.93666 9.21118 3.13081 9.21118H12.1301C12.3243 9.21118 12.4816 9.05377 12.4816 8.85966C12.4816 8.66555 12.3243 8.50815 12.1301 8.50815Z"
+              fill="#E27410" />
+            <path
+              d="M12.1301 10.9781H3.13081C2.93666 10.9781 2.7793 11.1356 2.7793 11.3297C2.7793 11.5238 2.93666 11.6812 3.13081 11.6812H12.1301C12.3243 11.6812 12.4816 11.5238 12.4816 11.3297C12.4816 11.1356 12.3243 10.9781 12.1301 10.9781Z"
+              fill="#E27410" />
+            <path
+              d="M12.1301 13.4483H3.13081C2.93666 13.4483 2.7793 13.6057 2.7793 13.7998C2.7793 13.9939 2.93666 14.1513 3.13081 14.1513H12.1301C12.3243 14.1513 12.4816 13.9939 12.4816 13.7998C12.4816 13.6057 12.3243 13.4483 12.1301 13.4483Z"
+              fill="#E27410" />
+            <path
+              d="M12.4816 16.2701C12.4816 16.0759 12.3243 15.9186 12.1301 15.9186H3.13081C2.93666 15.9186 2.7793 16.076 2.7793 16.2701C2.7793 16.4642 2.93666 16.6216 3.13081 16.6216H12.1301C12.3243 16.6216 12.4816 16.4643 12.4816 16.2701Z"
+              fill="#E27410" />
+            <path
+              d="M3.13081 19.5386C2.93666 19.5386 2.7793 19.696 2.7793 19.8901C2.7793 20.0842 2.93666 20.2416 3.13081 20.2416H7.64197C7.83613 20.2416 7.99349 20.0842 7.99349 19.8901C7.99349 19.696 7.83613 19.5386 7.64197 19.5386H3.13081Z"
+              fill="#E27410" />
+            <path
+              d="M16.181 4.35249V3.21183C16.181 2.7773 15.8275 2.42377 15.3929 2.42377H8.17571C7.74118 2.42377 7.3877 2.7773 7.3877 3.21183V4.35249C7.3877 4.78702 7.74118 5.1405 8.17571 5.1405H8.78518C8.97934 5.1405 9.1367 4.9831 9.1367 4.78899C9.1367 4.59483 8.97934 4.43747 8.78518 4.43747H8.17571C8.12888 4.43747 8.09077 4.39936 8.09077 4.35253V3.21183C8.09077 3.165 8.12888 3.12685 8.17571 3.12685H15.3929C15.4398 3.12685 15.4779 3.16495 15.4779 3.21183V4.35249C15.4779 4.39931 15.4398 4.43742 15.3929 4.43742H8.79097C8.59681 4.43742 8.43945 4.59483 8.43945 4.78894C8.43945 4.9831 8.59681 5.14045 8.79097 5.14045H15.393C15.8275 5.14055 16.181 4.78702 16.181 4.35249Z"
+              fill="#E27410" />
+            <path
+              d="M18.8093 20.25C18.6152 20.25 18.4578 20.4074 18.4578 20.6015V22.2607C18.4578 22.832 17.993 23.2969 17.4215 23.2969H1.87016C1.2988 23.2969 0.833891 22.8321 0.833891 22.2607V5.36381C0.833891 5.28773 0.842797 5.21311 0.858687 5.1405H4.05945C4.7277 5.1405 5.27136 4.59684 5.27136 3.92859V0.727875C5.34397 0.711984 5.41855 0.703078 5.49463 0.703078H17.4215C17.9929 0.703078 18.4578 1.16794 18.4578 1.73934V7.89848C18.4578 8.09264 18.6151 8.25 18.8093 8.25C19.0034 8.25 19.1608 8.09259 19.1608 7.89848V1.7393C19.1608 0.780281 18.3806 0 17.4215 0H5.49467C5.03009 0 4.59327 0.180937 4.26477 0.509438L0.64025 4.13395C0.31175 4.46245 0.130859 4.89923 0.130859 5.36386V22.2607C0.130859 23.2198 0.911094 24 1.87016 24H17.4215C18.3806 24 19.1608 23.2197 19.1608 22.2607V20.6016C19.1608 20.4074 19.0035 20.25 18.8093 20.25ZM4.56833 1.20019V3.92859C4.56833 4.20919 4.34005 4.43747 4.05945 4.43747H1.33105L4.56833 1.20019Z"
+              fill="#E27410" />
+            <path
+              d="M23.6243 12.5625C23.871 12.2003 23.9349 11.7536 23.7995 11.3367C23.664 10.9199 23.3497 10.596 22.9372 10.4481C22.6636 10.3499 22.481 10.0987 22.4723 9.80805C22.459 9.37001 22.248 8.97101 21.8934 8.71338C21.5389 8.4558 21.0942 8.37851 20.6736 8.50122C20.3943 8.58269 20.0991 8.48669 19.9212 8.25677C19.653 7.91013 19.2479 7.71133 18.8096 7.71133C18.3713 7.71133 17.9661 7.91013 17.6979 8.25677C17.5199 8.48674 17.2246 8.5826 16.9455 8.50122C16.5249 8.37841 16.0802 8.4558 15.7256 8.71338C15.3711 8.97101 15.1602 9.36996 15.1469 9.80801C15.1381 10.0986 14.9556 10.3498 14.6819 10.448C14.2694 10.596 13.9551 10.9199 13.8197 11.3367C13.6843 11.7535 13.7481 12.2003 13.9949 12.5625C14.1585 12.8028 14.1585 13.1133 13.9949 13.3536C13.7481 13.7158 13.6843 14.1626 13.8197 14.5794C13.9551 14.9962 14.2694 15.3201 14.6819 15.4681C14.9556 15.5663 15.1381 15.8175 15.1469 16.1081C15.1591 16.511 15.3437 16.8896 15.6536 17.1468C15.858 17.3164 16.1036 17.4226 16.3606 17.4581V20.6586C16.3606 20.9287 16.5071 21.1783 16.7428 21.31C16.9783 21.4415 17.2677 21.4357 17.4978 21.294L18.7871 20.5003C18.8081 20.4873 18.8206 20.4932 18.8322 20.5003L20.1214 21.294C20.3514 21.4355 20.6408 21.4416 20.8765 21.3099C21.1123 21.1782 21.2587 20.9286 21.2587 20.6586V17.458C21.5156 17.4226 21.7612 17.3164 21.9656 17.1468C22.2755 16.8896 22.4602 16.5111 22.4724 16.1081C22.4811 15.8174 22.6637 15.5662 22.9374 15.468C23.3499 15.3201 23.6642 14.9961 23.7996 14.5793C23.935 14.1625 23.8712 13.7157 23.6244 13.3535C23.4606 13.1133 23.4606 12.8028 23.6243 12.5625ZM20.4899 20.6953L19.2006 19.9016C18.961 19.7541 18.6584 19.7538 18.4184 19.9016L17.1292 20.6952C17.0999 20.7131 17.0636 20.6925 17.0636 20.6586V17.3913C17.3053 17.3634 17.5449 17.4617 17.6979 17.6594C17.9661 18.006 18.3713 18.2048 18.8096 18.2048C19.2479 18.2048 19.653 18.006 19.9212 17.6594C20.0742 17.4617 20.3139 17.3634 20.5555 17.3913V20.6586C20.5555 20.6928 20.5188 20.7131 20.4899 20.6953ZM23.0433 13.7495C23.1666 13.9306 23.1985 14.1538 23.1308 14.3621C23.0631 14.5705 22.9061 14.7324 22.6999 14.8063C22.1523 15.0027 21.7871 15.5054 21.7695 16.0869C21.7633 16.2913 21.6734 16.4756 21.5166 16.6058C21.3402 16.7522 21.1013 16.8074 20.8706 16.7401C20.3121 16.5771 19.7212 16.7691 19.3651 17.2292C19.2311 17.4024 19.0286 17.5017 18.8095 17.5017C18.5905 17.5017 18.388 17.4024 18.2539 17.2292C17.982 16.8778 17.5732 16.6828 17.1465 16.6828C17.0144 16.6828 16.8806 16.7015 16.7486 16.74C16.5156 16.8079 16.2774 16.751 16.1024 16.6057C15.9456 16.4755 15.8557 16.2912 15.8496 16.0869C15.8319 15.5054 15.4668 15.0027 14.9191 14.8063C14.713 14.7323 14.5559 14.5705 14.4882 14.3621C14.4205 14.1538 14.4524 13.9305 14.5758 13.7495C14.9033 13.2687 14.9033 12.6475 14.5758 12.1667C14.4524 11.9856 14.4205 11.7623 14.4882 11.554C14.5559 11.3456 14.713 11.1837 14.9191 11.1098C15.4668 10.9134 15.8319 10.4107 15.8496 9.82924C15.8562 9.61029 15.9615 9.41088 16.1388 9.28216C16.3159 9.1534 16.5381 9.11477 16.7485 9.17608C17.3068 9.33907 17.8979 9.14702 18.2539 8.68699C18.3879 8.51374 18.5904 8.41437 18.8095 8.41437C19.0286 8.41437 19.2311 8.51369 19.3651 8.68694C19.7211 9.14702 20.312 9.33902 20.8705 9.17608C21.0808 9.11468 21.303 9.15335 21.4802 9.28212C21.6575 9.41083 21.7629 9.61029 21.7695 9.82919C21.7871 10.4107 22.1523 10.9134 22.6999 11.1098C22.9061 11.1837 23.0631 11.3456 23.1308 11.5539C23.1985 11.7622 23.1666 11.9856 23.0433 12.1666C22.7157 12.6474 22.7157 13.2687 23.0433 13.7495Z"
+              fill="#E27410" />
+            <path
+              d="M18.8096 10.0117C17.185 10.0117 15.8633 11.3334 15.8633 12.958C15.8633 14.5826 17.185 15.9042 18.8096 15.9042C20.4341 15.9042 21.7558 14.5826 21.7558 12.958C21.7558 11.3334 20.4341 10.0117 18.8096 10.0117ZM18.8096 15.2012C17.5726 15.2012 16.5663 14.1949 16.5663 12.958C16.5663 11.7211 17.5726 10.7148 18.8096 10.7148C20.0465 10.7148 21.0528 11.7211 21.0528 12.958C21.0528 14.1949 20.0465 15.2012 18.8096 15.2012Z"
+              fill="#E27410" />
+          </svg>
+          <p class="about__text">Качество проверенное временем</p>
+        </div>
+        <div class="about__card">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_33_692)">
+              <path
+                d="M48 3.80069V2.52362C48 1.18741 46.9129 0.100281 45.5767 0.100281H2.42334C1.08713 0.100281 0 1.18741 0 2.52362V3.80078C0 4.92494 0.7695 5.87266 1.80947 6.14519V39.648C0.7695 39.9204 0 40.868 0 41.9922V45.4757C0 46.8119 1.08713 47.899 2.42334 47.899H11.2448C11.6321 47.899 13.5 47.6374 13.5 47.2499C13.5 46.8625 11.6322 46.496 11.2448 46.496H2.42334C1.86075 46.496 1.40297 46.0383 1.40297 45.4757V41.9922C1.40297 41.4295 1.86075 40.9718 2.42334 40.9718H2.511H45.489H45.5767C46.1393 40.9718 46.597 41.4295 46.597 41.9922V45.4757C46.597 46.0383 46.1393 46.496 45.5767 46.496H11.2448C10.8574 46.496 12.75 46.8101 12.75 47.1975C12.75 47.5849 10.8573 47.899 11.2448 47.899H45.5767C46.9129 47.899 48 46.8119 48 45.4757V41.9922C48 40.868 47.2304 39.9203 46.1904 39.6478V6.14509C47.2304 5.87266 48 4.92494 48 3.80069ZM1.40297 3.80069V2.52362C1.40297 1.96094 1.86075 1.50325 2.42334 1.50325H45.5767C46.1393 1.50325 46.597 1.96094 46.597 2.52362V3.80078C46.597 4.36347 46.1393 4.82116 45.5767 4.82116H45.489H32.0154H32.0135H2.511H2.42334C1.86075 4.82106 1.40297 4.36337 1.40297 3.80069ZM26.0163 24.1334C24.7484 24.3366 23.6597 25.0816 22.9942 26.1222C22.3287 25.0817 21.2399 24.3366 19.972 24.1334V6.22403H26.0163V24.1334ZM26.7178 25.4801C28.3799 25.4801 29.7323 26.8323 29.7323 28.4945C29.7323 30.1567 28.38 31.5089 26.7178 31.5089C25.0557 31.5089 23.7035 30.1567 23.7035 28.4945C23.7035 26.8323 25.0557 25.4801 26.7178 25.4801ZM12.5248 24.1334V6.22403H18.5691V24.1334C17.3012 24.3366 16.2124 25.0816 15.5469 26.1222C14.8815 25.0817 13.7927 24.3366 12.5248 24.1334ZM14.8376 28.4944C14.8376 30.1565 13.4855 31.5088 11.8233 31.5088C10.1611 31.5088 8.80894 30.1566 8.80894 28.4944C8.80894 26.8323 10.1612 25.48 11.8233 25.48C13.4854 25.48 14.8376 26.8323 14.8376 28.4944ZM19.2706 25.4801C20.9327 25.4801 22.2849 26.8323 22.2849 28.4945C22.2849 30.1567 20.9328 31.5089 19.2706 31.5089C17.6085 31.5089 16.2562 30.1567 16.2562 28.4945C16.2562 26.8323 17.6085 25.4801 19.2706 25.4801ZM4.72069 39.5689H3.21244V6.22403H4.72069V39.5689ZM44.7875 39.5689H43.2792V9.74994C43.2792 9.36247 42.9652 12.5771 42.5777 12.5771C42.1902 12.5771 41.8762 12.8912 41.8762 13.2785V39.5689H6.12366V6.22403H11.1218V24.1334C9.01838 24.4705 7.40597 26.2974 7.40597 28.4944C7.40597 30.9301 9.38756 32.9118 11.8233 32.9118C13.3865 32.9118 14.7616 32.0948 15.5469 30.8662C16.3323 32.0948 17.7074 32.9118 19.2706 32.9118C20.8338 32.9118 22.2089 32.0948 22.9943 30.8662C23.7796 32.0948 25.1547 32.9118 26.7178 32.9118C29.1536 32.9118 31.1352 30.9302 31.1352 28.4944C31.1352 26.2974 29.5228 24.4705 27.4193 24.1334V6.22403H31.4221L34.8358 24.2857C33.0538 24.8549 31.7594 26.5261 31.7594 28.4944C31.7594 30.9301 33.741 32.9118 36.1767 32.9118C38.6124 32.9118 40.594 30.9302 40.594 28.4944C40.594 26.0747 38.638 24.104 36.2243 24.0783L32.8498 6.22403H41.8763V13.4999C41.8763 13.8874 42.1903 13.4999 42.5778 13.4999C42.9652 13.4999 43.2793 13.8874 43.2793 13.4999V6.22403H44.7876L44.7875 39.5689ZM36.1767 25.4801C37.8388 25.4801 39.1911 26.8323 39.1911 28.4945C39.1911 30.1567 37.8388 31.5089 36.1767 31.5089C34.5146 31.5089 33.1624 30.1567 33.1624 28.4945C33.1624 26.8323 34.5146 25.4801 36.1767 25.4801Z"
+                fill="#E27410" />
+            </g>
+            <defs>
+              <clipPath id="clip0_33_692">
+                <rect width="48" height="48" fill="#E27410" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="about__text">Современное испытательное оборудование</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <a href="#" class="services__title">Услуги</a>
+      <div class="services__wrapper">
+        <div class="services__card services__card--big">
+          <a href="#" class="services__link">Определение соответствия проектной документациив области ПБ</a>
+          <img src="./icon/big_item.svg" alt="" class="services__img services__img--big">
+        </div>
+        <div class="services__card">
+          <a href="#" class="services__link">Экспертные исследования</a>
+          <img src="./icon/men.svg" alt="" class="services__img">
+        </div>
+        <div class="services__card services__card--orange">
+          <a href="#" class="services__link">Испытания веществ и материалов</a>
+          <a href="#" class="services__more">Подробнее</a>
+        </div>
+        <div class="services__card">
+          <a href="#" class="services__link">Испытание систем противопожарной защиты</a>
+          <img src="./icon/fire_extinguisher.svg" alt="" class="services__img">
+        </div>
+        <div class="services__card">
+          <a href="#" class="services__link">Сертификационные испытания</a>
+          <img src="./icon/small_item.svg" alt="" class="services__img">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="step">
+    <div class="container">
+      <h2 class="step__title">Процедура оформления</h2>
+      <div class="step__wrapper">
+        <div class="step__hr"></div>
+        <div class="step__card step__card--one">
+          <div class="step__number">1</div>
+        </div>
+        <div class="step__card">
+          <div class="step__number">2</div>
+        </div>
+        <div class="step__card">
+          <div class="step__number">3</div>
+        </div>
+        <div class="step__card">
+          <div class="step__number">4</div>
+        </div>
+        <div class="step__card">
+          <div class="step__number">5</div>
+        </div>
+        <div class="step__card step__card--six">
+          <div class="step__number">6</div>
+        </div>
+      </div>
+    </div>
+    <img src="./icon/logo_decor.png" alt="" class="step__img-right">
+    <img src="./icon/logo_decor.png" alt="" class="step__img-left">
+  </section>
+  <section class="team">
+    <div class="team__container">
+      <div class="team__title">Наша команда</div>
+      <div class="team__row">
+        <div class="team__wrapper">
+          <img src="./img/photo.png" alt="" class="team__img mr-14 mb-14">
+          <img src="./img/photo (4).png" alt="" class="team__img mr-14 mb-14">
+        </div>
+        <div class="team__wrapper">
+          <img src="./img/photo (1).png" alt="" class="team__img mr-14 mb-14">
+          <img src="./img/photo (5).png" alt="" class="team__img mr-14 mb-14">
+        </div>
+        <div class="team__wrapper">
+          <img src="./img/photo (2).png" alt="" class="team__img mr-14 mb-14">
+          <div class="mr-14 mb-14 gallery">
+            <img src="./img/team-mini.png" alt="" class="team__img">
+            <a class="gallery__btn" href="#">Перейти в галерею</a>
+          </div>
+
+
+
+
+        </div>
+        <div class="team__wrapper">
+          <img src="./img/photo (3).png" alt="" class="team__img mb-14">
+          <img src="./img/photo (6).png" alt="" class="team__img mb-14">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="question">
+    <div class="container">
+
+      <div class="question__wrapper">
+        <div class="question__title">Задайте свой вопрос</div>
+        <div class="question__title">Позвоните</div>
+      </div>
+      <div class="question__wrapper">
+
+        <form class="question__form">
+          <div>
+            <input class="question__input" type="text" name="name" class="check" data-valid="notEmpty"
+              placeholder="Имя">
+            <input class="question__input" type="text" name="phone" class="check" data-valid="phone"
+              placeholder="Телефон">
+            <input class="question__input" type="email" name="email" class="check" data-valid="email"
+              placeholder="Email">
+            <input class="question__checkbox" type="checkbox" id="cb1"> <label for="cb1">Я согласен на обработку</label>
+            <a href="#" class="question__link">персональных данных</a>
+          </div>
+          <div>
+            <textarea class="question__input" name="comment" cols="40" rows="9" data-valid="textArea"
+              placeholder="Комментарий..."></textarea>
+            <input type="submit" class="question__btn" value="Отправить">
+          </div>
+        </form>
+        <div class="question__tel">
+          <div class="question__description">Лаборатория</div>
+          <a href="tel:+73833359904" class="question__number">(383) 335-99-04</a>
+          <div class="question__description">Судебная экспертиза</div>
+          <a href="tel:+73833359603" class="question__number">(383) 335-96-03</a>
+          <div class="question__description">Секретарь</div>
+          <a href="tel:+73833359939" class="question__number">(383) 335-99-39</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__contacts">
+        <div class="footer__title">Контакты</div>
+        <div class="footer__contacts-wrapper">
+          <div class="footer__box--left">
+            <span><img src="./icon/phone.svg" alt=""> Адрес</span>
+            <div class="footer__text">630060, г. Новосибирск, ул.Зеленая Горка,12.</div>
+          </div>
+          <div class="footer__box--right">
+            <span><img src="./icon/mail.svg" alt=""> E-mail </span>
+            <a class="footer__text footer__text--link" href="mailto:ipl@54.mchs.gov.ru">ipl@54.mchs.gov.ru</a>
+          </div>
+        </div>
+        <div class="footer__contacts-wrapper">
+          <div class="footer__box">
+            <span><img src="./icon/phone.svg" alt="">Телефоны</span>
+            <div class="footer__text footer__text--small">Лаборатория </div>
+            <a class="footer__text footer__text--link" href="tel:+7383335-96-03">(383) 335-99-04</a>
+            <div class="footer__text footer__text--small">Судебная экспертиза</div>
+            <a class="footer__text footer__text--link" href="tel:+7383335-96-03">(383) 335-96-04</a>
+            <div class="footer__text footer__text--small">Секретарь</div>
+            <a class="footer__text footer__text--link" href="tel:+7383335-96-03">(383) 335-96-03</a>
+          </div>
+          <div class="footer__box">
+            <span><img src="./icon/time.svg" alt="">Приём посетителей</span>
+            <div class="footer__text footer__text--small">Пн—Чт</div>
+            <div class="footer__text">9:00-18:00</div>
+            <div class="footer__text footer__text--small">Пт</div>
+            <div class="footer__text">9:00-16:45</div>
+            <div class="footer__text footer__text--small">Обед</div>
+            <div class="footer__text">13:00-13:45</div>
           </div>
         </div>
       </div>
-    </header>
-  </body>
+      <div class="footer__map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a605adc5da073b500c818fa344407cec1807f84fb82728e56058f6bbeb97296&amp;source=constructor"
+          width="950" height="600" frameborder="0"></iframe>
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="container">
+    <div class="footer__bottom">
+
+      <div class="footer__bottom-text">1957-2021 © ФГБУ СЭУ ФПС по НО</div>
+      <div class="footer__bottom-link">Политика конфиденциальности</div>
+
+    </div>
+
+  </div>
+
+</body>
+<script src="/js/script.js"></script>
+
 </html>
