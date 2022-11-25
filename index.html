@@ -17,19 +17,33 @@
     <div class="header__fix">
       <div class="container">
         <div class="header__row">
-          <div class="header__hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="flex">
+            <div class="header__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <img src="./img/logo.png" alt="header__logo" width="48"/>
           </div>
           <ul class="header__top-item">
             <li> <a href="#" class="header__top-link">МЧС России</a></li>
             <li> <a href="#" class="header__top-link">ГУ МЧС России</a></li>
             <li> <a href="#" class="header__top-link">ИЦЭП МЧС России</a></li>
-            <li> <button href="#" class="header__top-link header__top-link--visually">Версия для слабовидящих</button>
+            <li>
+              <a href="#" class="header__top-link header__top-link--visually">
+                <span>Версия для слабовидящих</span>
+              </a>
             </li>
-            <li> <a href="tel:+73833359939" class="header__top-link header__top-link--phone">+7(383)-335-99-39</a></li>
+            <li> <a href="tel:+73833359939" class="header__top-link header__top-link--phone"><span>+7(383)-335-99-39</span></a></li>
           </ul>
+          <div class="flex mobile-icon">
+            <a href="#">
+              <img src="./icon/mobile_phone.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./icon/mobile_glasses.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -37,12 +51,7 @@
       <div>
         <img src="./img/logo.png" alt="header__logo" />
         <ul class="header__fix-item">
-          <li><a href="#" class="header__fix-link">Об учреждении</a>
-            <!-- <ul class="read_more">
-              <li><a href="#" class="header__fix-link">Эксперты</a></li>
-              <li><a href="#" class="header__fix-link">Документы</a></li>
-            </ul> -->
-          </li>
+          <li><a href="#" class="header__fix-link">Об учреждении</a></li>
           <li><a href="#" class="header__fix-link">Эксперты</a></li>
           <li><a href="#" class="header__fix-link">Документы</a></li>
           <li><a href="#" class="header__fix-link">Услуги</a></li>
@@ -51,23 +60,28 @@
           <li><a href="#" class="header__fix-link">Контакты</a></li>
         </ul>
       </div>
-
     </div>
     <div class="container">
       <div class="header__wrapper">
         <a href="#" class="header__logo">
-          <img src="./img/logo.png" alt="header__logo" />
+          <img src="./img/logo.png" alt="logo" />
         </a>
-        <div>
+        <div class="header__wrapper-item">
           <ul class="header__top-item">
             <li> <a href="#" class="header__top-link">МЧС России</a></li>
             <li> <a href="#" class="header__top-link">ГУ МЧС России</a></li>
             <li> <a href="#" class="header__top-link">ИЦЭП МЧС России</a></li>
-            <li> <button href="#" class="header__top-link header__top-link--visually">Версия для слабовидящих</button>
+            <li> <a href="#" class="header__top-link header__top-link--visually">
+                <span>Версия для слабовидящих</span></a>
             </li>
             <li> <a href="tel:+73833359939" class="header__top-link header__top-link--phone">+7(383)-335-99-39</a></li>
           </ul>
           <ul class="header__bottom-item">
+            <li class="header__logo--mobile">
+              <a href="#">
+                <img src="./img/logo.png" width="64" alt="logo" />
+              </a>
+            </li>
             <li>
               <a href="#" class="header__bottom-link">Об учреждении</a>
               <ul class="header__dropdown">
@@ -151,24 +165,6 @@
               </ul>
             </li>
             <li> <a href="#" class="header__bottom-link">Антикоррупция</a>
-              <ul class="header__dropdown">
-                <li>
-                  <a href="" class="header__dropdown-item">Определение соответствия проектной документациив области
-                    ПБ</a>
-                </li>
-                <li>
-                  <a href="" class="header__dropdown-item">Экспертные исследования</a>
-                </li>
-                <li>
-                  <a href="" class="header__dropdown-item">Испытания веществ и материалов</a>
-                </li>
-                <li>
-                  <a href="" class="header__dropdown-item">Испытание систем противопожарной защиты</a>
-                </li>
-                <li>
-                  <a href="" class="header__dropdown-item">Сертификационные испытания</a>
-                </li>
-              </ul>
             </li>
             <li> <a href="#" class="header__bottom-link">Галерея</a></li>
             <li> <a href="#" class="header__bottom-link">Контакты</a></li>
@@ -255,6 +251,7 @@
         <div class="services__card services__card--orange">
           <a href="#" class="services__link">Испытания веществ и материалов</a>
           <a href="#" class="services__more">Подробнее</a>
+          <img src="./icon/small_item.svg" alt="" class="services__img">
         </div>
         <div class="services__card">
           <a href="#" class="services__link">Испытание систем противопожарной защиты</a>
@@ -270,27 +267,53 @@
   <section class="step">
     <div class="container">
       <h2 class="step__title">Процедура оформления</h2>
-      <div class="step__wrapper">
-        <div class="step__hr"></div>
-        <div class="step__card step__card--one">
-          <div class="step__number">1</div>
-        </div>
-        <div class="step__card">
-          <div class="step__number">2</div>
-        </div>
-        <div class="step__card">
-          <div class="step__number">3</div>
-        </div>
-        <div class="step__card">
-          <div class="step__number">4</div>
-        </div>
-        <div class="step__card">
-          <div class="step__number">5</div>
-        </div>
-        <div class="step__card step__card--six">
-          <div class="step__number">6</div>
+      <div class="step__box">
+        <div class="step__wrapper">
+          <div class="step__hr"></div>
+          <div class="step__item">
+            <div class="step__card step__card--one">
+              <div class="step__number">1</div>
+            </div>
+            <div class="step__text">Письмо-заявка
+              от заказчика</div>
+          </div>
+          <div class="step__item">
+            <div class="step__card">
+              <div class="step__number">2</div>
+            </div>
+            <div class="step__text">Регистрация
+              письма-заявки</div>
+          </div>
+          <div class="step__item">
+            <div class="step__card">
+              <div class="step__number">3</div>
+            </div>
+            <div class="step__text">Заключение договора,выставление счета</div>
+          </div>
+          <div class="step__item">
+            <div class="step__card">
+              <div class="step__number">4</div>
+            </div>
+            <div class="step__text">Проведение работ,
+              оказание услуг</div>
+          </div>
+          <div class="step__item">
+            <div class="step__card">
+              <div class="step__number">5</div>
+            </div>
+            <div class="step__text">Регистрация<br>
+              заключения</div>
+          </div>
+          <div class="step__item">
+            <div class="step__card step__card--six">
+              <div class="step__number">6</div>
+            </div>
+            <div class="step__text">Подписание акта
+              выполненных работ</div>
+          </div>
         </div>
       </div>
+
     </div>
     <img src="./icon/logo_decor.png" alt="" class="step__img-right">
     <img src="./icon/logo_decor.png" alt="" class="step__img-left">
@@ -298,88 +321,92 @@
   <section class="team">
     <div class="team__container">
       <div class="team__title">Наша команда</div>
-      <div class="team__row">
-        <div class="team__wrapper">
-          <img src="./img/photo.png" alt="" class="team__img mr-14 mb-14">
-          <img src="./img/photo (4).png" alt="" class="team__img mr-14 mb-14">
-        </div>
-        <div class="team__wrapper">
-          <img src="./img/photo (1).png" alt="" class="team__img mr-14 mb-14">
-          <img src="./img/photo (5).png" alt="" class="team__img mr-14 mb-14">
-        </div>
-        <div class="team__wrapper">
-          <img src="./img/photo (2).png" alt="" class="team__img mr-14 mb-14">
-          <div class="mr-14 mb-14 gallery">
-            <img src="./img/team-mini.png" alt="" class="team__img">
-            <a class="gallery__btn" href="#">Перейти в галерею</a>
+      <div class="team__box">
+        <div class="team__row">
+          <div class="team__wrapper">
+            <img src="./img/photo.png" alt="" class="team__img mr-14 mb-14">
+            <img src="./img/photo (4).png" alt="" class="team__img mr-14 mb-14">
           </div>
-
-
-
-
-        </div>
-        <div class="team__wrapper">
-          <img src="./img/photo (3).png" alt="" class="team__img mb-14">
-          <img src="./img/photo (6).png" alt="" class="team__img mb-14">
+          <div class="team__wrapper">
+            <img src="./img/photo (1).png" alt="" class="team__img mr-14 mb-14">
+            <img src="./img/photo (5).png" alt="" class="team__img mr-14 mb-14">
+          </div>
+          <div class="team__wrapper">
+            <img src="./img/photo (2).png" alt="" class="team__img mr-14 mb-14">
+            <div class="mr-14 mb-14 gallery">
+              <img src="./img/team-mini.png" alt="" class="team__img">
+              <a class="gallery__btn" href="#">Перейти в галерею</a>
+            </div>
+          </div>
+          <div class="team__wrapper">
+            <img src="./img/photo (3).png" alt="" class="team__img mb-14">
+            <img src="./img/photo (6).png" alt="" class="team__img mb-14">
+          </div>
         </div>
       </div>
 
+
     </div>
   </section>
+
   <section class="question">
     <div class="container">
+      <div class="question__row">
 
-      <div class="question__wrapper">
-        <div class="question__title">Задайте свой вопрос</div>
-        <div class="question__title">Позвоните</div>
-      </div>
-      <div class="question__wrapper">
-
-        <form class="question__form">
-          <div>
-            <input class="question__input" type="text" name="name" class="check" data-valid="notEmpty"
-              placeholder="Имя">
-            <input class="question__input" type="text" name="phone" class="check" data-valid="phone"
-              placeholder="Телефон">
-            <input class="question__input" type="email" name="email" class="check" data-valid="email"
-              placeholder="Email">
-            <input class="question__checkbox" type="checkbox" id="cb1"> <label for="cb1">Я согласен на обработку</label>
-            <a href="#" class="question__link">персональных данных</a>
-          </div>
-          <div>
-            <textarea class="question__input" name="comment" cols="40" rows="9" data-valid="textArea"
-              placeholder="Комментарий..."></textarea>
+        <div class="question__wrapper">
+          <div class="question__title">Задайте свой вопрос</div>
+          <form>
+            <div class="input">
+              <input class="question__input" type="text" name="name" class="check" data-valid="notEmpty"
+                placeholder="Имя">
+              <input class="question__input" type="text" name="phone" class="check" data-valid="phone"
+                placeholder="Телефон">
+              <input class="question__input" type="email" name="email" class="check" data-valid="email"
+                placeholder="Email">
+            </div>
+            <div class="textarea">
+              <textarea class="question__input" name="comment" rows="9" data-valid="textArea"
+                placeholder="Комментарий..."></textarea>
+            </div>
+          </form>
+          <div class="submit"> 
+            <div>
+              <input class="question__checkbox" type="checkbox" id="cb1"> <label for="cb1">Я согласен на
+                обработку</label>
+              <a href="#" class="question__link">персональных данных</a>
+            </div>
             <input type="submit" class="question__btn" value="Отправить">
           </div>
-        </form>
+  
+        </div>
         <div class="question__tel">
+          <div class="question__title">Позвоните</div>
           <div class="question__description">Лаборатория</div>
-          <a href="tel:+73833359904" class="question__number">(383) 335-99-04</a>
+          <a href="tel:+73833359904" class="question__number"><img src="./icon/form-tel.svg" alt="">(383) 335-99-04</a>
           <div class="question__description">Судебная экспертиза</div>
-          <a href="tel:+73833359603" class="question__number">(383) 335-96-03</a>
+          <a href="tel:+73833359603" class="question__number"><img src="./icon/form-tel.svg" alt="">(383) 335-96-03</a>
           <div class="question__description">Секретарь</div>
-          <a href="tel:+73833359939" class="question__number">(383) 335-99-39</a>
+          <a href="tel:+73833359939" class="question__number"><img src="./icon/form-tel.svg" alt="">(383) 335-99-39</a>
         </div>
       </div>
+
+    </div>
+
+
     </div>
   </section>
+
+
+
 
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__contacts">
         <div class="footer__title">Контакты</div>
         <div class="footer__contacts-wrapper">
-          <div class="footer__box--left">
-            <span><img src="./icon/phone.svg" alt=""> Адрес</span>
-            <div class="footer__text">630060, г. Новосибирск, ул.Зеленая Горка,12.</div>
-          </div>
-          <div class="footer__box--right">
-            <span><img src="./icon/mail.svg" alt=""> E-mail </span>
-            <a class="footer__text footer__text--link" href="mailto:ipl@54.mchs.gov.ru">ipl@54.mchs.gov.ru</a>
-          </div>
-        </div>
-        <div class="footer__contacts-wrapper">
           <div class="footer__box">
+            <span><img src="./icon/phone.svg" alt=""> Адрес</span>
+            <div class="footer__text">630060, г. Новосибирск,<br> ул.Зеленая Горка,12.</div>
             <span><img src="./icon/phone.svg" alt="">Телефоны</span>
             <div class="footer__text footer__text--small">Лаборатория </div>
             <a class="footer__text footer__text--link" href="tel:+7383335-96-03">(383) 335-99-04</a>
@@ -389,6 +416,8 @@
             <a class="footer__text footer__text--link" href="tel:+7383335-96-03">(383) 335-96-03</a>
           </div>
           <div class="footer__box">
+            <span><img src="./icon/mail.svg" alt=""> E-mail </span>
+            <a class="footer__text footer__text--link" href="mailto:ipl@54.mchs.gov.ru">ipl@54.mchs.gov.ru</a>
             <span><img src="./icon/time.svg" alt="">Приём посетителей</span>
             <div class="footer__text footer__text--small">Пн—Чт</div>
             <div class="footer__text">9:00-18:00</div>

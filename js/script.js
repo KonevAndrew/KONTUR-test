@@ -7,6 +7,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("header__hamburger--active");
     menu.classList.toggle('active');
