@@ -20,8 +20,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("scroll", function () {
   const fixMenu = document.querySelector('.header__fix');
+  const header = document.querySelector('.header');
 
-  if (window.scrollY < (window.innerHeight - 250)) {
+  if (window.scrollY < header.clientHeight) {
     fixMenu.classList.remove("active");
   } else {
     fixMenu.classList.add("active");
