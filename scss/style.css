@@ -194,8 +194,7 @@ li {
 }
 .header__top-link:hover {
   color: #f47a0b;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 .header__top-link--visually {
   background: transparent;
@@ -946,8 +945,7 @@ input[type=radio]:checked + label:after {
     display: block;
     font-size: 18px;
     line-height: 145%;
-    -webkit-text-decoration-line: underline;
-            text-decoration-line: underline;
+    text-decoration-line: underline;
     color: #ffffff;
     position: absolute;
     left: 32px;
